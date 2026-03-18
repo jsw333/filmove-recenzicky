@@ -2,21 +2,29 @@
 ## Kamienie milowe
 
 ### 1. Określenie tematu i celu projektu, analiza wymagań
-- **Opis:** Zdefiniowanie celu projektu, którym jest stworzenie systemu rozpoznającego, czy recenzja filmu jest pozytywna czy negatywna. Określenie wymagań technologicznych, wyboru narzędzi oraz sprecyzowanie zakresu projektu w obszarze analizy sentymentu tekstu.
-- **Oczekiwany wynik:** Dokumentacja początkowa projektu, opis założeń systemu oraz wybór publicznego zbioru danych z recenzjami filmów.
+
+**Opis:** Zdefiniowanie celu projektu – stworzenie systemu rozpoznającego sentyment w recenzjach filmów i klasyfikującego opinie jako pozytywne lub negatywne na podstawie treści tekstu. Określenie wymagań funkcjonalnych i niefunkcjonalnych, zakresu projektu, architektury rozwiązania oraz stosu technologicznego wykorzystywanego do analizy danych i budowy modelu AI.
+
+**Oczekiwany wynik:** Dokument z celem projektu, opisem architektury rozwiązania, listą wymagań oraz wyborem i uzasadnieniem zbioru danych z recenzjami filmów.
 
 ### 2. Zbiór danych i ich przygotowanie
-- **Opis:** Pozyskanie i analiza wybranego zbioru danych. Wstępne czyszczenie recenzji, usunięcie zbędnych elementów tekstu, przygotowanie danych do dalszego przetwarzania oraz podział na zbiory treningowy, walidacyjny i testowy.
-- **Oczekiwany wynik:** Oczyszczony i przygotowany zbiór danych tekstowych gotowy do trenowania modeli.
+
+**Opis:** Pozyskanie i analiza wybranego zbioru recenzji filmowych. Wykonanie wstępnej analizy danych, oczyszczenie tekstu z niepotrzebnych elementów, przygotowanie etykiet oraz przekształcenie recenzji do postaci umożliwiającej uczenie modelu, np. przy użyciu tokenizacji, wektoryzacji lub reprezentacji *TF-IDF*. Podział danych na zbiory treningowy, walidacyjny i testowy.
+
+**Oczekiwany wynik:** Przygotowany i oczyszczony zbiór danych tekstowych, gotowy do trenowania modeli, wraz z opisem formatu danych wejściowych i sposobu ich przetwarzania.
 
 ### 3. Wybór i implementacja modelu AI
-- **Opis:** Implementacja co najmniej dwóch modeli klasyfikacji sentymentu, np. klasycznego modelu uczenia maszynowego oraz modelu bardziej zaawansowanego. Przeprowadzenie treningu na przygotowanych danych i zapisanie uzyskanych modeli.
-- **Oczekiwany wynik:** Wytrenowane modele AI gotowe do oceny skuteczności.
+
+**Opis:** Implementacja modelu AI przeznaczonego do klasyfikacji sentymentu recenzji filmowych. Przygotowanie co najmniej dwóch podejść do rozwiązania problemu, np. klasycznego modelu uczenia maszynowego oraz modelu opartego na sieciach neuronowych lub architekturze *transformer*. Przeprowadzenie procesu trenowania modeli i zapis uzyskanych wersji do dalszej ewaluacji.
+
+**Oczekiwany wynik:** Działające i wytrenowane modele AI, które potrafią klasyfikować recenzje jako pozytywne lub negatywne i są gotowe do porównania skuteczności.
 
 ### 4. Ocena wyników modelu i optymalizacja
-- **Opis:** Porównanie wyników działania modeli na zbiorze testowym z wykorzystaniem odpowiednich metryk. Analiza rezultatów oraz dostosowanie parametrów modeli w celu poprawy jakości klasyfikacji.
-- **Oczekiwany wynik:** Raport z porównania modeli, ocena skuteczności oraz wybór najlepszego rozwiązania.
+
+**Opis:** Przeprowadzenie testów modeli na zbiorze testowym oraz analiza skuteczności przy użyciu metryk takich jak *accuracy*, *precision*, *recall* i *F1-score*. Porównanie wyników, analiza błędnych klasyfikacji oraz dostrojenie parametrów modeli i sposobu przygotowania danych w celu poprawy jakości predykcji.
+
+**Oczekiwany wynik:** Raport z eksperymentów, porównanie skuteczności zastosowanych modeli, wnioski z analizy wyników oraz wybór najlepszego rozwiązania.
 
 ### 5. Wdrożenie modelu i prezentacja działania
-- **Opis:** Przygotowanie prostego sposobu prezentacji działania modelu, umożliwiającego wprowadzenie tekstu recenzji i uzyskanie wyniku klasyfikacji. Opracowanie końcowej demonstracji projektu.
-- **Oczekiwany wynik:** Działający prototyp systemu oraz gotowa prezentacja końcowa.
+
+**Opis:** Integracja wybranego modelu z prostą aplikacją demonstracyjną umożliwiającą wprowadzenie własnej recenzji filmu i uzyskanie predykcji sentymentu. Przygotowanie końcowej wersji projektu do prezentacji oraz opracowanie krótkiej dokumentacji opisującej działanie systemu i sposób jego uruchomienia.
